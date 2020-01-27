@@ -1,3 +1,7 @@
-katz_deli  = []
-
-def take_a_number(array, string)
+def line(deli)
+  if deli.empty?
+    puts "The line is currently empty."
+  else 
+    current_line = "The line is currently:"
+    deli.each.with_index(1) do |person,i|
+      current_line << "#{person}"
